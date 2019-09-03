@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace I\YouTrack\Rest\Authenticator;
 
-use I\YouTrack\Rest\Client\Client as ClientContract;
+use I\YouTrack\Rest\Client\Client;
 
 interface Authenticator
 {
@@ -25,7 +25,7 @@ interface Authenticator
      *
      * @throws \I\YouTrack\Rest\Authenticator\Exceptions\AuthenticationException
      */
-    public function authenticate(ClientContract $client): void;
+    public function authenticate(Client $client): void;
 
     /**
      * Retrieve authentication token.

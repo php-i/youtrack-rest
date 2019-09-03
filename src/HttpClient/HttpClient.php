@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace I\YouTrack\Rest\HttpClient;
 
-use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ResponseInterface as HttpMessageResponse;
 
 interface HttpClient
 {
@@ -27,5 +27,5 @@ interface HttpClient
      *
      * @throws \I\YouTrack\Rest\HttpClient\Exceptions\HttpClientException
      */
-    public function request(string $method, string $uri, array $options = []): ResponseInterface;
+    public function request(string $method, string $uri, array $options = []): HttpMessageResponse;
 }

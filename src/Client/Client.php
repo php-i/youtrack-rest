@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace I\YouTrack\Rest\Client;
 
-use I\YouTrack\Rest\Response\Response as ResponseContract;
+use I\YouTrack\Rest\Response\Response;
 
 interface Client
 {
@@ -35,7 +35,7 @@ interface Client
      * @throws \I\YouTrack\Rest\Authorizer\Exceptions\InvalidAuthorizationToken
      * @throws \I\YouTrack\Rest\Client\Exceptions\ClientException
      */
-    public function request(string $method, string $uri, array $params = [], array $options = []): ResponseContract;
+    public function request(string $method, string $uri, array $params = [], array $options = []): Response;
 
     /**
      * Create and send an GET HTTP request.
@@ -49,7 +49,7 @@ interface Client
      * @throws \I\YouTrack\Rest\Authorizer\Exceptions\InvalidAuthorizationToken
      * @throws \I\YouTrack\Rest\Client\Exceptions\ClientException
      */
-    public function get(string $uri, array $params = [], array $options = []): ResponseContract;
+    public function get(string $uri, array $params = [], array $options = []): Response;
 
     /**
      * Create and send an POST HTTP request.
@@ -63,7 +63,7 @@ interface Client
      * @throws \I\YouTrack\Rest\Authorizer\Exceptions\InvalidAuthorizationToken
      * @throws \I\YouTrack\Rest\Client\Exceptions\ClientException
      */
-    public function post(string $uri, array $params = [], array $options = []): ResponseContract;
+    public function post(string $uri, array $params = [], array $options = []): Response;
 
     /**
      * Create and send an PUT HTTP request.
@@ -77,7 +77,7 @@ interface Client
      * @throws \I\YouTrack\Rest\Authorizer\Exceptions\InvalidAuthorizationToken
      * @throws \I\YouTrack\Rest\Client\Exceptions\ClientException
      */
-    public function put(string $uri, array $params = [], array $options = []): ResponseContract;
+    public function put(string $uri, array $params = [], array $options = []): Response;
 
     /**
      * Create and send an DELETE HTTP request.
@@ -91,7 +91,7 @@ interface Client
      * @throws \I\YouTrack\Rest\Authorizer\Exceptions\InvalidAuthorizationToken
      * @throws \I\YouTrack\Rest\Client\Exceptions\ClientException
      */
-    public function delete(string $uri, array $params = [], array $options = []): ResponseContract;
+    public function delete(string $uri, array $params = [], array $options = []): Response;
 
     /**
      * Write header value.

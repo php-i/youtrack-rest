@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace I\YouTrack\Rest\Authorizer;
 
-use I\YouTrack\Rest\Client\Client as ClientContract;
+use I\YouTrack\Rest\Client\Client;
 
 interface Authorizer
 {
@@ -23,5 +23,5 @@ interface Authorizer
      * @param \I\YouTrack\Rest\Client\Client $client
      * @return void
      */
-    public function appendHeadersTo(ClientContract $client): void;
+    public function appendHeadersTo(Client $client): void;
 }
