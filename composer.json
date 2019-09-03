@@ -1,0 +1,52 @@
+{
+  "name": "php-i/youtrack-rest",
+  "description": "JetBrains YouTrack REST API PHP Client Interfaces",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "i",
+    "php-i",
+    "unitype",
+    "youtrack",
+    "yt",
+    "rest",
+    "api",
+    "client",
+    "jetbrains",
+    "issues",
+    "bugtracker",
+    "helpdesk",
+    "pm",
+    "tickets"
+  ],
+  "authors": [
+    {
+      "name": "Anton Komarev",
+      "email": "anton@komarev.com",
+      "homepage": "https://komarev.com",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/php-i/youtrack-rest",
+  "support": {
+    "email": "open@cybercog.su",
+    "issues": "https://github.com/php-i/youtrack-rest/issues",
+    "wiki": "https://github.com/php-i/youtrack-rest/wiki",
+    "source": "https://github.com/php-i/youtrack-rest",
+    "docs": "https://github.com/php-i/youtrack-rest/wiki"
+  },
+  "require": {
+    "php": "^7.1.3",
+    "psr/http-message": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "I\\YouTrack\\Rest\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable" : true
+}
