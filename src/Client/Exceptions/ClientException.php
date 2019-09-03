@@ -15,6 +15,6 @@ namespace I\YouTrack\Rest\Client\Exceptions;
 
 use RuntimeException;
 
-final class ClientException extends RuntimeException
+class ClientException extends RuntimeException
 {
 }
